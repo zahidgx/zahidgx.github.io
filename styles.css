@@ -1,27 +1,44 @@
+/* styles.css */
 
+/* Estilo general para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido en el eje horizontal */
+    align-items: center; /* Centra el contenido en el eje vertical */
+    height: 100vh; /* Hace que el contenido ocupe toda la altura de la ventana */
 }
 
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Contenedor general */
+.container {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre la imagen y el contenido */
 }
 
+/* Estilo para la imagen de perfil */
 .foto-perfil {
     width: 200px;
     border-radius: 50%;
-    display: block;
-    margin: 20px auto;
+    margin: 0; /* Elimina márgenes automáticos */
 }
 
+/* Estilo para la sección de información */
+.info {
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    color: #333;
+}
+
+/* Estilo para el botón */
 button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -29,8 +46,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px; /* Agrega un poco de espacio por encima del botón */
 }
 
 button:hover {
     background-color: #45a049;
 }
+
